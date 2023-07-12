@@ -1,0 +1,104 @@
+.sort-container {
+    margin-right: 1%;
+    position: relative;
+
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sort-selected {
+    width: 20rem;
+    border: 1px solid #000;
+    border-radius: 0.2em;
+    padding: 0.3em 1em;
+    position: relative;
+    font-size: 1rem;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+}
+
+.sort-options {
+    width: 20rem;
+    border: 1px solid #000;
+    border-radius: 0.2em;
+    padding: 0.5em 0;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    background-color: #fff;
+
+    /* remove display none later it has to be toggled based on click */
+    display: none;
+}
+
+.dropdown-item {
+    padding: 0.5em;
+    padding-left: 0.6em;
+    padding-right: 2.6em;
+}
+
+.sort-options .dropdown-item {
+    text-align: start;
+    font-size: 1rem;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+}
+
+.footer-container {
+    display: none;
+}
+
+@media screen and (max-width: 808px) {
+    .footer-container {
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+.small-screen-footer {
+    background-color: var(--primary-color);
+    width: 100vw;
+
+    /* flex properties */
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-buttons {
+    width: 50%;
+    padding: 0.8em 1em;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    /* flex properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.footer-buttons:nth-child(1) {
+    border-right: 1px solid #000;
+}
+
+.footer-icons {
+    font-size: 1.1rem !important;
+}
+
+@media screen and (max-width: 808px) {
+    .sort-container {
+        display: none;
+    }
+}
